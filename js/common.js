@@ -177,46 +177,6 @@ $(document).ready(function (){
         }
     });
 
-    $('#roadview-popup').magnificPopup({
-        items: [
-            {
-                src: './img/roadview/roadview1.jpg',
-                title: '컨벤션&호텔입구편'
-            },
-            {
-                src: './img/roadview/roadview2-1.jpg',
-                title: '남문편1'
-            },
-            {
-                src: './img/roadview/roadview2-2.jpg',
-                title: '남문편2'
-            },
-            {
-                src: './img/roadview/roadview3.jpg',
-                title: '북문편'
-            }
-        ],
-        gallery: {
-            enabled: true,
-            tCounter: '%curr% / %total%'
-        },
-        type: 'image',
-        callbacks: {
-            beforeOpen: function () {
-                $('body').css("overflow", "hidden");
-                $('body').css("touch-action", "none");
-            },
-            open: function () {
-                $('body').css("overflow", "hidden");
-                $('body').css("touch-action", "none");
-            },
-            close: function() {
-                $('body').css("overflow", "");
-                $('body').css("touch-action", "pan-y");
-            },
-        }
-    });
-
     drawCalendar(window.basic.date);
     loadCountdown(window.basic.date,window.basic.honeymoon);
 
