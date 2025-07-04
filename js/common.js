@@ -11,7 +11,7 @@ window.basic = {
                 "name": "이영호",
                 "phone": "01094050503",
                 "bank": "국민",
-                "account": "국민 72182596101680"
+                "account": "국민 721825-96-101680"
             },
             "mother": {
                 "name": "김라미",
@@ -63,11 +63,11 @@ window.basic = {
     "kakao": {
         "description": "2025.11.23. 일요일 오후 12:30\n웨스턴베니비스 영등포 그랜드볼룸홀",
         "button": "모바일 청첩장 보기",
-        "img": "https://drive.google.com/"
+        "img": "https://drive.google.com/u/0/drive-viewer/AKGpihaWexyU7z0-FIc4tMuDFM6746fcrmwQ4jLuTK9cQMxkL5MbEbfNuvwg0zYgAzNlyPgez966M-aKppv0dYJQfYbBZdqyzD42I60=s1600-rw-v1"
     },
     "info": {
         "description":"2025.11.23.(일) 오후 12:30 웨스턴베니비스 영등포 홀",
-        "greeting": "평범하지만 특별한 시간 여행을<br>함께할 사람을 만났습니다.<br>",
+        "greeting": "지현과 동수, 이름도 잘 어울리지만<br>성도 나란히 '이씨'입니다!<br>하지만 걱정 마세요, 같은 성 다른 집안입니다<br>이제 두 사람이 한 가족이 되려 합니다. 축하해 주세요!",
         "wedding_date": "2025.11.23 일요일 오후 12:30",
         "wedding_location": "웨스턴베니비스 영등포 그랜드볼룸홀",
         "wedding_address": "서울특별시 영등포구 국회대로 558 ( 당산동3가 393 )<br>웨스턴베니비스 영등포 2층"
@@ -153,16 +153,7 @@ $(document).ready(function (){
     $('#map-popup').magnificPopup({
         items: [
             {
-                src: './img/map/map3.jpg'
-            },
-            {
-                src: './img/map/map4.jpg'
-            },
-            {
-                src: './img/map/map1.jpg'
-            },
-            {
-                src: './img/map/map2.jpg'
+                src: './img/map/map.jpg'
             }
         ],
         gallery: {
