@@ -5,19 +5,19 @@ window.basic = {
         "first_name": "동수",
         "phone": "01023114149",
         "bank": "기업",
-        "account": "기업 0000-000-0000",
+        "account": "기업 082-112877-01-018",
         "parents": {
             "father": {
                 "name": "이영호",
-                "phone": "01000000000",
+                "phone": "01094050503",
                 "bank": "국민",
-                "account": "국민 0000-0000-0000"
+                "account": "국민 72182596101680"
             },
             "mother": {
                 "name": "김라미",
-                "phone": "01000000000",
-                "bank": "국민",
-                "account": "국민 0000-0000-0000"
+                "phone": "01045734146",
+                "bank": "농협",
+                "account": "농협 45308252127595"
             }
         }
     },
@@ -30,15 +30,15 @@ window.basic = {
         "parents": {
             "father": {
                 "name": "이강희",
-                "phone": "01098860115",
-                "bank": "몰루",
-                "account": "몰루 000-0000-0000"
+                "phone": "01073386690",
+                "bank": "국민",
+                "account": "국민 047-24-0233-582"
             },
             "mother": {
                 "name": "김연희",
                 "phone": "01027753690",
                 "bank": "국민",
-                "account": "국민 0000-0000-0000"
+                "account": "국민 047-24-0294-551"
             }
         }
     },
@@ -61,13 +61,13 @@ window.basic = {
     },
     "link": "https://jeonidongsu.github.io/",
     "kakao": {
-        "description": "2025.11.23. 일요일 오후 12:30\n웨스턴베니비스 영등포 홀",
+        "description": "2025.11.23. 일요일 오후 12:30\n웨스턴베니비스 영등포 그랜드볼룸홀",
         "button": "모바일 청첩장 보기",
-        "img": "https://drive.google.com/u/0/drive-viewer/AKGpihZ9xaFr7iSUbV-hmmcBTSafu6Ap5drMRowtphnkZV8vRRaAll361pFYf2qp0zZJp-JwBpWrM6T7HlcDTo5bYmJPEZPpae3WrxE=s1600-rw-v1"
+        "img": "https://drive.google.com/"
     },
     "info": {
         "description":"2025.11.23.(일) 오후 12:30 웨스턴베니비스 영등포 홀",
-        "greeting": "평범하지만 특별한 시간 여행을<br>함께할 사람을 만났습니다.<br>여행 중에 방전되지 않도록<br>서로를 충전해 주겠습니다.<br>",
+        "greeting": "평범하지만 특별한 시간 여행을<br>함께할 사람을 만났습니다.<br>",
         "wedding_date": "2025.11.23 일요일 오후 12:30",
         "wedding_location": "웨스턴베니비스 영등포 그랜드볼룸홀",
         "wedding_address": "서울특별시 영등포구 국회대로 558 ( 당산동3가 393 )<br>웨스턴베니비스 영등포 2층"
@@ -515,7 +515,7 @@ function copyLink(){
 
     let url = window.document.location.href;
     copyToClipboard(url);
-    alert('석범♥세희 청첩장 주소가 복사되었습니다.');
+    alert('동수♥지현 청첩장 주소가 복사되었습니다.');
 }
 
 function copyAccount(val){
