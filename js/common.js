@@ -74,7 +74,7 @@ window.basic = {
     }
 }
 let scrollTop;
-const holidays = [16,17,18];
+const holidays = [];
 const numOfImages = 46;
 const basicNumbers = 9;
 const excludeNumbers = [22,31,46];
