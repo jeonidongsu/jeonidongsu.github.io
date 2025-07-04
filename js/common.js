@@ -153,6 +153,9 @@ $(document).ready(function (){
     $('#map-popup').magnificPopup({
         items: [
             {
+                src: './img/map/map0.jpg'
+            },
+            {
                 src: './img/map/map.jpg'
             }
         ],
