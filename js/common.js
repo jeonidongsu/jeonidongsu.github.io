@@ -67,7 +67,7 @@ window.basic = {
     },
     "info": {
         "description":"2025.11.23.(일) 오후 12:30 웨스턴베니비스 영등포 홀",
-        "greeting": "이동수와 이지현이 만나 결혼을 합니다<br>동성이지만 동본은 아니라 다행입니다<br>수십억 지구인들 중에 저희 둘이 만났습니다<br> <br>이토록 성대하고 아름다운 결혼식<br>지상 최고로 행복한 결혼식<br>현금 많이 들고 오세용 힛",
+        "greeting": "이동수와 이지현이 만나 결혼을 합니다\n동성이지만 동본은 아니라 다행입니다\n수십억 지구인들 중에 저희 둘이 만났습니다\n\n이토록 성대하고 아름다운 결혼식\n지상 최고로 행복한 결혼식\n현금 많이 들고 오세용 힛",
         "wedding_date": "2025.11.23 일요일 오후 12:30",
         "wedding_location": "웨스턴베니비스 영등포 그랜드볼룸홀",
         "wedding_address": "서울특별시 영등포구 국회대로 558 ( 당산동3가 393 )<br>웨스턴베니비스 영등포 2층"
@@ -198,7 +198,21 @@ function setText(){
     $('.txt-bride-first').html(window.basic.bride.first_name);
     $('.txt-bride-father').html(window.basic.bride.parents.father.name);
     $('.txt-bride-mother').html(window.basic.bride.parents.mother.name);
-    $('#txt-greeting').html(window.basic.info.greeting);
+    // $('#txt-greeting').html(window.basic.info.greeting);
+
+    const greeting = window.basic.info.greeting; // 입력된 문구
+    const lines = greeting.split('\n'); // 줄바꿈 기준으로 분리
+
+    // 줄별로 첫 글자만 강조하여 삽입
+    const formattedLines = lines.map(line => {
+        if (line.trim() === '') return ''; // 빈 줄은 건너뜀
+        const firstChar = `<span class="highlight">${line[0]}</span>`;
+        const restOfLine = line.slice(1);
+        return `${firstChar}${restOfLine}`;
+    }).join('<br>'); // 각 줄을 다시 <br>로 연결
+
+    $('#txt-greeting').html(formattedLines); // 결과를 DOM에 삽입
+    
     $('.txt-date').html(window.basic.info.wedding_date);
     $('.txt-location').html(window.basic.info.wedding_location);
     $('#txt-address').html(window.basic.info.wedding_address);
