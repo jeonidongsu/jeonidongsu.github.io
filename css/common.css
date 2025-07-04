@@ -228,7 +228,7 @@ a, a:hover, a:active, a:focus {
 }
 #calendar .highlight {
     background: radial-gradient(ellipse at center, #e95a42 60%, #ffffff00 61%);
-    color: #fff;
+    color: #fff !important;
 }
 #calendar .empty {
     width: 38px;
