@@ -77,6 +77,10 @@ a, a:hover, a:active, a:focus {
     line-height: 2.5rem;
     white-space: pre-line;
 }
+.greeting-container .highlight {
+    font-weight: bolder;
+    font-size: 1rem;
+}
 .name-container{
     display: flex;
     align-items: baseline;
