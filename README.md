@@ -7,4 +7,4 @@
 * 주소 : 서울특별시 영등포구 국회대로 558 ( 당산동3가 393 ) 웨스턴베니비스 영등포 2층
 
 ### Wedding Invitation
-![Main](./img/gallery/37.jpg)
+![Main](./img/gallery/공유1.jpg)
