@@ -143,14 +143,14 @@ a, a:hover, a:active, a:focus {
     color: #797979;
 }
 .main-img{
-    background-image: url(../img/main/31.jpg);
+    background-image: url(../img/main/1.jpg);
     background-size: cover;
     background-position: top;
     height: 700px;
 }
 
 .sub-img{
-    background-image: url(../img/main/22.jpg);
+    background-image: url(../img/main/2.jpg);
     background-size: cover;
     background-position: top;
     background-position-y: -30px;
@@ -159,7 +159,7 @@ a, a:hover, a:active, a:focus {
     max-width: 390px;
 }
 .footer-img{
-    background-image: url(../img/main/46.jpg);
+    background-image: url(../img/main/3.jpg);
     background-size: cover;
     background-position: center;
     height: 450px;
