@@ -161,7 +161,7 @@ a, a:hover, a:active, a:focus {
     background-image: url(../img/main/3.jpg);
     background-size: cover;
     background-position: center;
-    background-position-y: -120px;
+    background-position-y: -100px;
     height: 450px;
 }
 .sub-title{
