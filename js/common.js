@@ -198,20 +198,20 @@ function setText(){
     $('.txt-bride-first').html(window.basic.bride.first_name);
     $('.txt-bride-father').html(window.basic.bride.parents.father.name);
     $('.txt-bride-mother').html(window.basic.bride.parents.mother.name);
-    // $('#txt-greeting').html(window.basic.info.greeting);
+    $('#txt-greeting').html(window.basic.info.greeting);
 
-    const greeting = window.basic.info.greeting; // 입력된 문구
-    const lines = greeting.split('\n'); // 줄바꿈 기준으로 분리
+    // const greeting = window.basic.info.greeting; // 입력된 문구
+    // const lines = greeting.split('\n'); // 줄바꿈 기준으로 분리
 
     // 줄별로 첫 글자만 강조하여 삽입
-    const formattedLines = lines.map(line => {
-        if (line.trim() === '') return ''; // 빈 줄은 건너뜀
-        const firstChar = `<span class="highlight">${line[0]}</span>`;
-        const restOfLine = line.slice(1);
-        return `${firstChar}${restOfLine}`;
-    }).join('<br>'); // 각 줄을 다시 <br>로 연결
+    // const formattedLines = lines.map(line => {
+    //     if (line.trim() === '') return ''; // 빈 줄은 건너뜀
+    //     const firstChar = `<span class="highlight">${line[0]}</span>`;
+    //     const restOfLine = line.slice(1);
+    //     return `${firstChar}${restOfLine}`;
+    // }).join('<br>'); // 각 줄을 다시 <br>로 연결
 
-    $('#txt-greeting').html(formattedLines); // 결과를 DOM에 삽입
+    // $('#txt-greeting').html(formattedLines); // 결과를 DOM에 삽입
     
     $('.txt-date').html(window.basic.info.wedding_date);
     $('.txt-location').html(window.basic.info.wedding_location);
