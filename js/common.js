@@ -63,7 +63,7 @@ window.basic = {
     "kakao": {
         "description": "2025.11.23. 일요일 오후 12:30\n웨스턴베니비스 영등포 그랜드볼룸홀",
         "button": "모바일 청첩장 보기",
-        "img": "https://drive.google.com/u/0/drive-viewer/AKGpihY95pFFRqpik5PWrj6LEYfy_Y7xbgwYxYU_Kmt8IiXjlVB-ZIVBb7xrlmW6cq_9vFXFBjEHCpsvqZ2xLMOnnwPgPuv6-fw6Q7I=s1600-rw-v1"
+        "img": "https://drive.google.com/u/0/drive-viewer/AKGpihZOZZPKK-OrZhAK6fQ7VbubRhPFPw29gnxQirxZcI-txai4NzRur7I_iCB5gJpqFqDHz8pVSKzUeHAx76nBsT2YWAWahaHrfI0=s1600-rw-v1"
     },
     "info": {
         "description":"2025.11.23.(일) 오후 12:30 웨스턴베니비스 영등포 홀",
@@ -75,7 +75,7 @@ window.basic = {
 }
 let scrollTop;
 const holidays = [];
-const numOfImages = 33;
+const numOfImages = 38;
 const basicNumbers = 9;
 const excludeNumbers = [];
 const excludeNumbers2 = [];
@@ -439,7 +439,7 @@ function setGallery(id){
         }
 
         let imgElement = document.createElement('img');
-        imgElement.src = './img/gallery1/' + imageNumber + '.jpg';
+        imgElement.src = './img/gallery/' + imageNumber + '.jpg';
 
         divElement.appendChild(imgElement);
 
