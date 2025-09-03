@@ -113,8 +113,10 @@ $(document).ready(function (){
         }
     });
 
-    setGallery('gallery-html');
+    //setGallery('gallery-html');
 
+    setGallery('gallery-html2');
+    
     // let msnry = $('#grid-container').masonry({
     //     itemSelector: '.grid-item',
     //     percentPosition: true,
@@ -126,42 +128,52 @@ $(document).ready(function (){
     //     $('#grid-container').masonry('layout');
     // });
 
-    $('.grid-item').magnificPopup({
-        fixedContentPos: true,
-        delegate: 'img',
-        type:'image',
-        gallery: {
-            enabled: true,
-            tCounter: '%curr% / %total%'
-        },
-        callbacks: {
-            beforeOpen: function () {
-                $('body').css("overflow", "hidden");
-                $('body').css("touch-action", "none");
-            },
-            open: function () {
-                $('body').css("overflow", "hidden");
-                $('body').css("touch-action", "none");
+    lightbox.option({
+        'disableScrolling': true,
+        'resizeDuration': 1,
+        'fadeDuration': 1,
+        'fadeDuration': 1,
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices' : true,
+        'albumLabel':'%1 / %2',
+    })
+    
+    // $('.grid-item').magnificPopup({
+    //     fixedContentPos: true,
+    //     delegate: 'img',
+    //     type:'image',
+    //     gallery: {
+    //         enabled: true,
+    //         tCounter: '%curr% / %total%'
+    //     },
+    //     callbacks: {
+    //         beforeOpen: function () {
+    //             $('body').css("overflow", "hidden");
+    //             $('body').css("touch-action", "none");
+    //         },
+    //         open: function () {
+    //             $('body').css("overflow", "hidden");
+    //             $('body').css("touch-action", "none");
 
-                // ✅ iOS 제스처 줌 방지
-              document.addEventListener('gesturestart', preventGesture, { passive: false });
-              document.addEventListener('gesturechange', preventGesture, { passive: false });
-              document.addEventListener('gestureend', preventGesture, { passive: false });
-                //$('figure>img').parent().bind('contextmenu', function(e){ return false; });
-            },
-            // imageLoadComplete: function () {
-            //     $('body').css("overflow", "hidden");
-            //     $('body').css("touch-action", "none");
-            // },
-            close: function() {
-                $('body').css("overflow", "");
-                $('body').css("touch-action", "pan-y");
-            },
-            elementParse: function(qw) {
-                qw.src = qw.el.attr('src');
-            }
-        }
-    });
+    //             // ✅ iOS 제스처 줌 방지
+    //           document.addEventListener('gesturestart', preventGesture, { passive: false });
+    //           document.addEventListener('gesturechange', preventGesture, { passive: false });
+    //           document.addEventListener('gestureend', preventGesture, { passive: false });
+    //             //$('figure>img').parent().bind('contextmenu', function(e){ return false; });
+    //         },
+    //         // imageLoadComplete: function () {
+    //         //     $('body').css("overflow", "hidden");
+    //         //     $('body').css("touch-action", "none");
+    //         // },
+    //         close: function() {
+    //             $('body').css("overflow", "");
+    //             $('body').css("touch-action", "pan-y");
+    //         },
+    //         elementParse: function(qw) {
+    //             qw.src = qw.el.attr('src');
+    //         }
+    //     }
+    // });
 
     $('#map-popup').magnificPopup({
         items: [
@@ -438,21 +450,46 @@ function setGallery(id){
     // }
 
     let cnt = 0;
+    // randomImageNumbers.forEach(function(imageNumber) {
+
+    //     if(excludeNumbers.includes(imageNumber)||excludeNumbers2.includes(imageNumber)){
+    //         return;
+    //     }
+    //     let divElement = document.createElement('div');
+    //     cnt++;
+    //     if(cnt <= basicNumbers){
+    //         divElement.className = 'grid-item';
+    //     }else{
+    //         divElement.className = 'grid-item hidden-photo visually-hidden';
+    //     }
+
+    //     let imgElement = document.createElement('img');
+    //     imgElement.src = './img/gallery/' + imageNumber + '.jpg';
+
+    //     divElement.appendChild(imgElement);
+
+    //     parentElement.appendChild(divElement);
+    // });
     randomImageNumbers.forEach(function(imageNumber) {
 
         if(excludeNumbers.includes(imageNumber)||excludeNumbers2.includes(imageNumber)){
             return;
         }
-        let divElement = document.createElement('div');
+        let divElement = document.createElement('a');
         cnt++;
         if(cnt <= basicNumbers){
-            divElement.className = 'grid-item';
+            divElement.className = 'grid-item example-image-link';
         }else{
-            divElement.className = 'grid-item hidden-photo visually-hidden';
+            divElement.className = 'grid-item example-image-link hidden-photo visually-hidden';
         }
+
+        divElement.setAttribute('href', './img/gallery/' + imageNumber + '.jpg');
+        divElement.setAttribute('data-lightbox', 'example-set');
+        divElement.setAttribute('data-title', '');
 
         let imgElement = document.createElement('img');
         imgElement.src = './img/gallery/' + imageNumber + '.jpg';
+        imgElement.className = "example-image";
 
         divElement.appendChild(imgElement);
 
