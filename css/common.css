@@ -34,7 +34,7 @@ body {
 }
 
 /* 이미지 컨테이너를 중앙에 놓기 위한 flex 보정 */
-.lb-outerContainer {
+/* .lb-outerContainer {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@ body {
   max-width: 90vw;
   max-height: 90vh;
   background-color: white;
-}
+} */
 
 /* 이미지 자체 크기 제한 및 비율 유지 */
 .lightbox .lb-image {
@@ -53,6 +53,11 @@ body {
   object-fit: contain;
   display: block;
   margin: 0 auto;
+}
+
+.lb-nav a.lb-next,
+.lb-nav a.lb-prev {
+  transition: none !important;
 }
 
 .mfp-bg{
