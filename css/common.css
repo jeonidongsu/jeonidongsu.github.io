@@ -20,12 +20,11 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-/* 세로 가운데 정렬을 위한 핵심 수정 */
-.lightbox {
+body.lb-disable-scrolling .lightbox {
   display: flex !important;
   align-items: center;
   justify-content: center;
-  position: fixed !important;     /* ← 기존은 absolute라서 위에 붙음 */
+  position: fixed !important;
   top: 0;
   left: 0;
   height: 100vh;
@@ -33,8 +32,7 @@ body {
   z-index: 10000;
 }
 
-/* 이미지 컨테이너를 중앙에 놓기 위한 flex 보정 */
-/* .lb-outerContainer {
+body.lb-disable-scrolling .lb-outerContainer {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -42,10 +40,9 @@ body {
   max-width: 90vw;
   max-height: 90vh;
   background-color: white;
-} */
+}
 
-/* 이미지 자체 크기 제한 및 비율 유지 */
-.lightbox .lb-image {
+body.lb-disable-scrolling .lightbox .lb-image {
   max-width: 90vw;
   max-height: 90vh;
   width: auto;
@@ -54,7 +51,6 @@ body {
   display: block;
   margin: 0 auto;
 }
-
 .lb-nav a.lb-next,
 .lb-nav a.lb-prev {
   transition: none !important;
