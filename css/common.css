@@ -20,37 +20,6 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-body.lb-disable-scrolling .lightbox {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 10000;
-}
-
-body.lb-disable-scrolling .lb-outerContainer {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 90vw;
-  max-height: 90vh;
-  background-color: white;
-}
-
-body.lb-disable-scrolling .lightbox .lb-image {
-  max-width: 90vw;
-  max-height: 90vh;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
 .lb-nav a.lb-next,
 .lb-nav a.lb-prev {
   transition: none !important;
