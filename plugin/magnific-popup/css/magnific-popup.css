@@ -297,7 +297,13 @@ img.mfp-img {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 40px 0 40px;
-    margin: 0 auto; }
+    margin: 0 auto; 
+    touch-action: none;             /* 줌, 스크롤 제스처 막기 */
+    -webkit-user-drag: none;        /* iOS에서 이미지 드래그 방지 */
+    -webkit-touch-callout: none;    /* 꾹 눌렀을 때 이미지 메뉴 방지 */
+    user-select: none;              /* 텍스트/이미지 선택 방지 */
+    pointer-events: none;           /* 필요 시 터치 자체 비활성화 */
+}
 
 /* The shadow behind the image */
 .mfp-figure {
