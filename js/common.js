@@ -416,7 +416,7 @@ function getKakaoMap(location){
     marker.setPosition(xy);
 }
 function morePhoto(){
-    $('#grid-container .hidden-photo').removeClass('visually-hidden');
+    $('#grid-container2 .hidden-photo').removeClass('visually-hidden');
 
     $('#more-photo').addClass('visually-hidden');
     $('#hide-photo').removeClass('visually-hidden');
@@ -426,7 +426,7 @@ function morePhoto(){
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 }
 function hidePhoto(){
-    $('#grid-container .hidden-photo').addClass('visually-hidden');
+    $('#grid-container2 .hidden-photo').addClass('visually-hidden');
     // imagesLoaded( '#grid-container' ).on( 'progress', function() {
     //     $('#grid-container').masonry('layout');
     // });
