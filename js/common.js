@@ -86,6 +86,10 @@ $(document).ready(function (){
 
     new WOW().init();
 
+    function preventGesture(e) {
+      e.preventDefault();
+    }
+    
     $('.popup').magnificPopup({
         type: 'inline',
         fixedContentPos: true,
@@ -97,6 +101,10 @@ $(document).ready(function (){
             open: function () {
                 $('body').css("overflow", "hidden");
                 $('body').css("touch-action", "none");
+                // ✅ iOS 제스처 줌 방지
+                  document.addEventListener('gesturestart', preventGesture, { passive: false });
+                  document.addEventListener('gesturechange', preventGesture, { passive: false });
+                  document.addEventListener('gestureend', preventGesture, { passive: false });
             },
             close: function() {
                 $('body').css("overflow", "");
@@ -134,6 +142,11 @@ $(document).ready(function (){
             open: function () {
                 $('body').css("overflow", "hidden");
                 $('body').css("touch-action", "none");
+
+                // ✅ iOS 제스처 줌 방지
+              document.addEventListener('gesturestart', preventGesture, { passive: false });
+              document.addEventListener('gesturechange', preventGesture, { passive: false });
+              document.addEventListener('gestureend', preventGesture, { passive: false });
                 //$('figure>img').parent().bind('contextmenu', function(e){ return false; });
             },
             // imageLoadComplete: function () {
