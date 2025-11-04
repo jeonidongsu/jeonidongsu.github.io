@@ -63,7 +63,7 @@ window.basic = {
     "kakao": {
         "description": "2025.11.23. 일요일 오후 12:30\n웨스턴베니비스 영등포 그랜드볼룸홀",
         "button": "모바일 청첩장 보기",
-        "img": "https://drive.google.com/u/0/drive-viewer/AKGpihYTaloYNeWBqj-f-Oak8NhSyvah_NWBnj7X85qutu7LveljjQ2BG6klxIta5g5h5h-hAiFY3m8lrbCPTbDHGbcY08bUQF0G2kY=s1600-rw-v1"
+        "img": "https://drive.google.com/u/0/drive-viewer/AKGpihYfO_kRN7Hkt8pV4yVSsVW5c8RkfR1PM98RmUwtDwfC0NSp5qQ48EhkJ9zKly7L0OZ3RbTlCdfY27szmS_YppRv8DAZX6Y0bds=s1600-rw-v1"
     },
     "info": {
         "description":"2025.11.23.(일) 오후 12:30 웨스턴베니비스 영등포 홀",
